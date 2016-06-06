@@ -40,14 +40,14 @@ module.exports.connections = {
   * Run: npm install sails-mysql                                             *
   *                                                                          *
   ***************************************************************************/
-  someMysqlServer: {
+  mysqlServer: {
     adapter: 'sails-mysql',
     host: 'localhost',
     user: 'root', //optional
     password: 'dev', //optional
     database: 'blogv4' //optional
   }
-
+  
   /***************************************************************************
   *                                                                          *
   * MongoDB is the leading NoSQL database.                                   *
