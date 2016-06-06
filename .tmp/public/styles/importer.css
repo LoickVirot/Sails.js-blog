@@ -24,20 +24,41 @@ html {
   background: #EAEAEA;
 }
 body {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   max-width: 700px;
   margin: auto;
+}
+@media (min-width: 700px) {
+  body {
+    margin-top: 20px;
+  }
+}
+@media (min-width: 1000px) {
+  body {
+    flex-direction: row;
+    max-width: 1000px;
+  }
+  body main {
+    flex: 5;
+  }
 }
 h1 {
   font-weight: normal;
   color: #555555;
   font-family: Oswald, Roboto, Arial, serif;
 }
+@media (min-width: 1000px) {
+  header.main-header {
+    margin-right: 20px;
+    flex: 2;
+  }
+}
 .box {
   background: #FFFFFF;
   border-radius: 3px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
 }
 .box-content {
   padding: 20px;
@@ -45,6 +66,14 @@ h1 {
 .box-content h1 {
   padding-bottom: 5px;
   margin-bottom: 10px;
+}
+.box img {
+  width: 100%;
+}
+@media (min-width: 700px) {
+  .box {
+    margin-bottom: 20px;
+  }
 }
 .btn {
   display: inline-block;

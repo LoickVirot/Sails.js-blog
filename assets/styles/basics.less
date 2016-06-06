@@ -12,9 +12,27 @@ html
 
 body
 {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   max-width: 700px;
   margin: auto;
+
+  @media (min-width: @mobile)
+  {
+    margin-top: 20px;
+  }
+
+  @media (min-width: @tablet)
+  {
+    flex-direction: row;
+    max-width: 1000px;
+
+    main
+    {
+      flex: 5;
+    }
+  }
 }
 
 h1
