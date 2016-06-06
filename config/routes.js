@@ -32,7 +32,9 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
-  '/': { controller: 'HomeController', action:'index' }
+  '/': { controller: 'HomeController', action:'index' },
+  '/post': {controller: "HomeController"},
+  '/post/:id': {controller: 'PostController'}
 
   /***************************************************************************
   *                                                                          *
