@@ -16,7 +16,7 @@ module.exports = {
     //
     //   });
 
-    Post.find({limit: 1}).exec(function(err, records){
+    Post.find({limit: 2, sort: 'createdAt desc'}).exec(function(err, records){
       if (err) {
         sails.log.warn("Error : GetPosts failed");
       }
